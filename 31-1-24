@@ -1,0 +1,65 @@
+#question 1
+x = int(input())
+y = int(input())
+z = int(input())
+total = x + y*z
+print(total) 
+
+#question 2
+money = int(input())
+cost = int(input())
+rides = money//cost
+print(rides) 
+
+#question 3
+coded = str(input())
+lst = []
+for letter in coded:
+  lst.append(letter)
+uncoded = lst[2:] + lst[0:2]
+uncoded = ''.join(uncoded)
+print(uncoded)
+
+#question 4
+a = input()
+b = input()
+c = input()
+if a == b == c:
+  print("OK")
+elif b == c and a != b:
+  print("BOTH MISMATCH")
+elif a != b:
+  print("ENTRY 2 MISMATCH")
+elif a != c:
+  print("ENTRY 3 MISMATCH")
+else:
+  print("not in this")
+
+#question 5
+drink = input()
+if drink == 't' or drink == 'c':
+  refill = int(input())
+  num = refill + 1
+else: 
+  num = 1
+print(num)
+
+#question 6
+total = 0
+while total < 12:
+  unit = int(input())
+  total += unit
+left = total - 12
+print(left)
+
+#question 7
+words = int(input())
+days = words//5
+left = words - days*5
+total = (days+1)*5 + left
+while days > 0:
+  total += days*5
+  days -= 1
+print(total)
+
+#question 8
