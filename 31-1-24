@@ -63,3 +63,15 @@ while days > 0:
 print(total)
 
 #question 8
+word = str(input())
+lst = []
+n = 0
+for letter in word:
+  lst.append(letter)
+length = len(lst)
+print("+-+")
+while length > 0:
+  print("|" + lst[n] + "|")
+  print("+-+")
+  n += 1
+  length -= 1
